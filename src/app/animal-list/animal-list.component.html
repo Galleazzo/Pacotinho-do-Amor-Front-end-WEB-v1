@@ -1,0 +1,31 @@
+<section class="animal-list container">
+    <!-- Filtros para gatos e cachorros -->
+    <div class="filter-section text-center mb-4">
+      <button class="btn btn-outline-primary me-2" (click)="filtrarAnimais('todos')">Todos</button>
+      <button class="btn btn-outline-primary me-2" (click)="filtrarAnimais('gatos')">Gatos</button>
+      <button class="btn btn-outline-primary" (click)="filtrarAnimais('cachorros')">Cachorros</button>
+    </div>
+  
+    <!-- Listagem dos Animais -->
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let animal of getAnimaisFiltrados()">
+        <div class="card animal-card">
+          <img [src]="animal.imagem" class="card-img-top" [alt]="animal.nome">
+          <div class="card-body">
+            <h5 class="card-title">{{ animal.nome }}</h5>
+            <p class="card-text">{{ animal.descricao }}</p>
+            <a [routerLink]="['/animal', animal.id]" class="btn btn-primary">Saber Mais / Adotar</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Espaço para Google Ads -->
+      <div class="col-md-4 mb-4">
+        <div class="google-ad">
+          <!-- Placeholder para o Google Ad -->
+          <img src="assets/google-ad-placeholder.png" class="img-fluid" alt="Ad">
+        </div>
+      </div>
+    </div>
+  </section>
+  

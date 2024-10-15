@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnimalDetailsComponent } from './animal-details/animal-details.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'animal/:id', component: AnimalDetailsComponent },
+];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
