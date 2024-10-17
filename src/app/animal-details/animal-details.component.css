@@ -64,3 +64,12 @@
         font-size: 1rem;
     }
 }
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #007bff;
+}

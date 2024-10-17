@@ -10,6 +10,7 @@ import { ImageProcessingService } from '../services/image-processing.service';
 export class AnimalListComponent implements OnInit {
   animais: any[] = [];
   filtro: string = 'todos'; // Pode ser 'gatos', 'cachorros' ou 'todos'
+  loading: boolean = true; // Variável para o estado de carregamento
 
   constructor(private animalService: AnimalService, private imageProcessingService: ImageProcessingService) {}
 
@@ -48,10 +49,10 @@ export class AnimalListComponent implements OnInit {
         if (animal.animalAge == "MORE_SIX_YEARS") {
           animal.animalAge = "Mais de seis anos"
         }
-      })
-      console.log(this.animais)
+      });
+
+      this.loading = false;
     });
-    
   }
 
   filtrarAnimais(tipo: string) {

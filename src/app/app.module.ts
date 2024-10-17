@@ -8,6 +8,7 @@ import { BannerComponent } from './banner/banner.component';
 import { AnimalListComponent } from './animal-list/animal-list.component';
 import { AnimalDetailsComponent } from './animal-details/animal-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     BannerComponent,
     AnimalListComponent,
-    AnimalDetailsComponent
+    AnimalDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
