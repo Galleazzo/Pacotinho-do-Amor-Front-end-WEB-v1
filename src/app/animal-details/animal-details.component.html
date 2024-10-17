@@ -1,0 +1,38 @@
+<div class="container">
+  <div *ngIf="animal" class="animal-details-card">
+    <div class="animal-image">
+      <img [src]="animal.image.animalImage[0].url" alt="{{ animal.name }}" />
+    </div>
+    <div class="animal-info">
+      <h1>{{ animal.name }}</h1>
+      <p><strong>Idade:</strong> {{ animal.animalAge }}</p>
+      <p><strong>Sexo:</strong> {{ animal.animalSex }}</p>
+      
+      <p><strong>Descrição:</strong></p>
+      <p>
+        Critérios para adoção:<br>
+        - Maior de 21 anos<br>
+        - Obrigatório responder questionário e participar de entrevista<br>
+        - <strong>IMPORTANTE:</strong> Processo somente por WhatsApp 11 99489 6555<br>
+        - Adoção com Termo de Responsabilidade<br>
+        - Aplica-se taxa de adoção de 100,00 reais<br>
+        - Apresentar Comprovante de endereço e documento de identidade<br><br>
+
+        Todos os animais são doados com vacinas e vermífugo em dia e protocolo de castração (quando não estão
+        castrados).<br><br>
+
+        É importante se atentar que alguns animais passaram por maus-tratos, por isso ao adotar tenha paciência até que
+        o animal se adapte.<br><br>
+
+        <strong>Obs.:</strong> Não reservamos animais. Não fazemos adoção por terceiros. Enviamos resposta para os
+        perfis aprovados em até 3 dias úteis.<br><br>
+
+        Vamos ajudar esse Pacotinho a ganhar uma família? Curtam, compartilhem.
+      </p>
+
+      <div class="adopt-section">
+        <button class="btn btn-primary"><a target="_blank" href="https://api.whatsapp.com/send?phone=5511994896555&text=Ol%C3%A1%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre:%20&source=&data=&l=pt_br" style="color: white; text-decoration: none;">Adotar {{ animal.name }}</a></button>
+      </div>
+    </div>
+  </div>
+</div>

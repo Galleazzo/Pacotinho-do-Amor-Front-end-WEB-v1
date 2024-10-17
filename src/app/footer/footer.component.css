@@ -1,0 +1,22 @@
+footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+footer h5 {
+    color: #007bff;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #343a40;
+}
