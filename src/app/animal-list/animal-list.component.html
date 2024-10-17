@@ -10,9 +10,9 @@
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let animal of getAnimaisFiltrados()">
         <div class="card animal-card">
-          <img [src]="animal.imagem" class="card-img-top" [alt]="animal.nome">
+          <img [src]="animal.animalImage[0].animalImage[0].url" class="card-img-top" [alt]="animal.name">
           <div class="card-body">
-            <h5 class="card-title">{{ animal.nome }}</h5>
+            <h5 class="card-title">{{ animal.name }}</h5>
             <p class="card-text">{{ animal.descricao }}</p>
             <a [routerLink]="['/animal', animal.id]" class="btn btn-primary">Saber Mais / Adotar</a>
           </div>
