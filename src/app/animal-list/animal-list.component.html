@@ -1,9 +1,12 @@
+<app-banner></app-banner>
 <section class="animal-list container">
     <!-- Filtros para gatos e cachorros -->
+    <br>
+    <br>
     <div class="filter-section text-center mb-4">
       <button class="btn btn-outline-primary me-2" (click)="filtrarAnimais('todos')">Todos</button>
-      <button class="btn btn-outline-primary me-2" (click)="filtrarAnimais('gatos')">Gatos</button>
-      <button class="btn btn-outline-primary" (click)="filtrarAnimais('cachorros')">Cachorros</button>
+      <button class="btn btn-outline-primary me-2" (click)="filtrarAnimais('CAT')">Gatos</button>
+      <button class="btn btn-outline-primary" (click)="filtrarAnimais('DOG')">Cachorros</button>
     </div>
   
     <!-- Listagem dos Animais -->
@@ -13,7 +16,7 @@
           <img [src]="animal.animalImage[0].animalImage[0].url" class="card-img-top" [alt]="animal.name">
           <div class="card-body">
             <h5 class="card-title">{{ animal.name }}</h5>
-            <p class="card-text">{{ animal.descricao }}</p>
+            <p class="card-text">{{ animal.animalAge }}</p>
             <a [routerLink]="['/animal', animal.id]" class="btn btn-primary">Saber Mais / Adotar</a>
           </div>
         </div>

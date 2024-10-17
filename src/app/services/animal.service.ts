@@ -6,9 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AnimalService {
-  getAnimalById(id: string | null) {
-    throw new Error('Method not implemented.');
-  }
+
 
   private apiUrl = 'http://localhost:8080/animals';
 
@@ -17,4 +15,8 @@ export class AnimalService {
   getAnimais(): Observable<any> {
     return this.http.get<any>(this.apiUrl + "/getAll");
   }
+
+  getById(id: any): Observable<any> {
+    return this.http.get<any>(this.apiUrl + `?id=${id}`);
+}
 }
