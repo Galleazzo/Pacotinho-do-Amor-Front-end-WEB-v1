@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class AnimalService {
 
 
-  private apiUrl = 'https://pacotinhodoamor-backend-web-v1-1b8810594d07.herokuapp.com/animals';
+  private apiUrl = 'https://pacotinhodoamor-backend-web-v1-e9152729b992.herokuapp.com/animals';
 
   constructor(private http: HttpClient) { }
 
