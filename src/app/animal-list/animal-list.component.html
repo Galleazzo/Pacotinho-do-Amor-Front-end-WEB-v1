@@ -19,6 +19,14 @@
 
   <!-- Listagem dos Animais -->
   <div class="row" *ngIf="!loading">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3965144937959030"
+      crossorigin="anonymous"></script>
+    <!-- item pacotinho do amor -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3965144937959030" data-ad-slot="6001170329"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     <div class="col-md-4 mb-4" *ngFor="let animal of getAnimaisFiltrados()">
       <div class="card animal-card">
         <img [src]="animal.animalImage[0].animalImage[0].url" class="card-img-top" [alt]="animal.name">
